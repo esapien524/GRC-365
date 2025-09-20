@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<style>
+    @font-face {
+        font-family: irishgrover-regular;
+        src: url("irishgrover-regular.ttf");
+    }
+    @font-face {
+        font-family: Limelight-regular;
+        src: url("Limelight-Regular.ttf");
+    }
+    * {margin: 0; padding: 0;
+    } h1 {
+        font: 50pt irishgrover-regular;
+        margin: 50px 2px auto;
+        width: auto;
+        text-align: center;
+        text-shadow: 2px 3px gainsboro;
+    } p {
+        font: 26pt irishgrover-regular;
+        margin: 12px auto;
+        width: 1024px;
+        text-align: center;
+        text-shadow: 2px 3px gainsboro
+    } body {
+        background: whitesmoke;
+    } #container {
+        width: 1024px;
+        height: 365px;
+        border: 10px ridge goldenrod;
+        background: beige;
+        box-shadow: 5px 5px 2px gainsboro;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    } img {
+        width: 200px;
+        height: auto;
+    } img:hover {
+        transform: scale(1.03);
+        transition: transform 0.5s;
+    } figure {
+        width: 200px;
+        height: 168px;
+    } figcaption {
+        font: 15pt Limelight-regular;
+        justify-content: center;
+        text-align: center;
+        color: black;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Curious, are we~?</h1>
+    <p>Well, have a look around, then! Don't worry, the art won't bite! Give 'em a click to see them better!
+    </p>
+    <div id="container">
+        <figure>
+            <a href="Checkmate.png">
+            <img src="checkmatethumb.jpg"/>
+            </a>
+            <figcaption>"Checkmate"</figcaption>
+        </figure>
+        <figure>
+            <a href="poster1.png">
+            <img src="poster1_thumb.jpg"/>
+            </a>
+            <figcaption>Visions Unveiled: Poster 1</figcaption>
+        </figure>
+        <figure>
+            <a href="poster2.png">
+            <img src="poster2_thumb.jpg"/>
+            </a>
+            <figcaption>Visions Unveiled: Poster 2</figcaption>
+        </figure>
+    </div>
+</body>
+</html>
