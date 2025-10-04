@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Image Grid Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Zen+Dots&display=swap" rel="stylesheet">
+    <style>
+       * {
+            margin: 25px auto;
+            padding: 0;
+        } body {
+            background: black;
+        } #page {
+            width: 928px;
+            height: auto;
+            background: dimgray;
+            border: 1px solid lime;
+            box-shadow: 2px 3px 6px lime;
+            margin: 0 auto;
+        } main {
+            width: 768px;
+            height: auto;
+            margin: 36px auto;
+            display: grid;
+            grid-gap: 0px;
+            grid-template: repeat(3, 256px)/repeat(3, 320px);
+        } header h1 {
+            font: 48pt 'Zen Dots';
+            color: black;
+            text-align: center;
+            margin-top: 24px;
+            text-shadow: 2px 3px 6px lime
+        } header h2 {
+            font: 42pt 'Zen Dots';
+            color: black;
+            text-align: center;
+            text-shadow: 2px 3px 6px lime;
+        } main img {
+            width: auto;
+        } main img:nth-child(1) {
+            grid-area: 1/1/2/1;
+        } main img:nth-child(2) {
+            grid-area: 1/2/1/4;
+        } main img:nth-child(3) {
+            grid-area: 2/2/2/4;
+        } main img:nth-child(4) {
+            grid-area: 3/2/3/4;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <h1>Glittering Galaxies!</h1>
+            <h2>A Grid!</h2>
+        </header>
+        <main>
+            <img style="height: 255%;" src="space-art-5626853_640.jpg">
+            <img src="alien-226244_640.jpg">
+            <img src="stars-2643089_640.jpg">
+            <img src="universe-2742113_640.jpg">
+        </main>
+    </div>
+</body>
+</html>
