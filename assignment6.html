@@ -1,0 +1,100 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Complaint Department</title>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Quintessential&display=swap" rel="stylesheet">
+    <style>
+       * {
+            margin: 15px auto;
+        } body {
+            background: black;
+        } #page {
+            width: 928px;
+            height: auto;
+            background: darkred;
+            border: 5px ridge gold;
+            margin: 0 auto;
+        } main {
+            width: 768px;
+            height: auto;
+            margin: 35px auto;
+        } header h1 {
+            font: 48pt 'Quintessential';
+            color: gold;
+            text-align: center;
+            margin-top: 24px;
+            text-shadow: 2px 3px 6px black
+        } header h2 {
+            font: 40pt 'Newsreader';
+            color: gold;
+            text-align: center;
+            margin: 96px auto;
+            text-shadow: 2px 3px 6px black;
+        } form {
+            width: 600px;
+            min-height: 600px;
+            padding: 25px;
+            background: maroon;
+            border: ridge gold;
+            font: 20pt 'Newsreader';
+            color: gold;
+            text-shadow: 2px 2px 5px black;
+            text-align: left;
+        } textarea {
+            resize: none;
+        } fieldset {
+            border: ridge gold;
+        } body {
+            font: 45pt 'Quintessential';
+            color:gold;
+            text-align: center;
+            text-shadow: 2px 3px 6px black;
+        } img {
+            margin: 25px auto;
+            display: block;
+            border: ridge gold;
+        } input[type="submit"] {
+            transform: scale(2.5);
+            display: block;
+            align-content: center;
+            margin-top: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <h1>Thoughts? Compliments? Complaints?</h1>
+            <h2>Let us know down below!</h2>
+        </header>
+        <main>
+          <form action="#" method="post">
+            <label for="fname">First Name:</label><br/>
+            <input type="text" id="fname" value="Your first name (duh)" /><br/>
+            <label for="lname">Last Name:</label><br/>
+            <input type="text" id="lname" value="Come on now" /><br/>
+            
+            <fieldset>
+            <legend>So, What's Up?</legend>
+            <input type="radio" name="thisone" id="good" value="You rock!" />
+            <label for="good">You rock!</label><br/>
+            <input type="radio" name="thisone" id="bad" value="You suck!" />
+            <label for="bad">You suck!</label><br/>
+            <input type="radio" name="thisone" id="other" value="Something else!" />
+            <label for="other">Something else</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gotta Be More Specific.</legend>
+                <label>Message:</label><br/>
+                <textarea name="message" rows="6" cols="72" required></textarea>
+            </fieldset>
+
+            <input type="submit" value="Send">
+        </form>
+            <body>Your input matters to us!<br/></body>
+            <img src="printer-shredder.gif">
+        </main>
+    </div>
+</body>
+</html>
