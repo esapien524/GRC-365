@@ -58,6 +58,9 @@
             display: block;
             align-content: center;
             margin-top: 45px;
+        } footer {
+            font: 14pt 'Newsreader';
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -70,9 +73,9 @@
         <main>
           <form action="#" method="post">
             <label for="fname">First Name:</label><br/>
-            <input type="text" id="fname" value="Your first name (duh)" /><br/>
+            <input type="text" id="fname" value="Your first name (duh)" required /><br/>
             <label for="lname">Last Name:</label><br/>
-            <input type="text" id="lname" value="Come on now" /><br/>
+            <input type="text" id="lname" value="Come on now" required /><br/>
             
             <fieldset>
             <legend>So, What's Up?</legend>
@@ -92,8 +95,9 @@
 
             <input type="submit" value="Send">
         </form>
-            <body>Your input matters to us!<br/></body>
+        <body>Your input matters to us!<br/></body>
             <img src="printer-shredder.gif">
+        <footer>Still want to tell us how you're feeling?<br/>Call (248) 434-5508<br/>We're no strangers!</footer>
         </main>
     </div>
 </body>
