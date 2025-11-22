@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Quintessential&display=swap" rel="stylesheet">
+<style>
+    @font-face {
+        font-family: Limelight-regular;
+        src: url("Limelight-Regular.ttf");
+    }
+    * {margin: 0; padding: 0;
+    } h1 {
+        font: 50pt 'Quintessential';
+        margin: 10px 2px auto;
+        width: auto;
+        text-align: center;
+        text-shadow: 2px 3px 6px black;
+        color: gold;
+    } p {
+        font: 26pt 'Newsreader';
+        margin: 25px auto;
+        text-align: center;
+        text-shadow: 2px 3px 6px black;
+        color: gold;
+        margin-left: 25px;
+        margin-right: 25px;
+    } body {
+        background: black;
+    } #titlecard {
+        width: 1024px;
+        max-width: 1024px;
+        height: auto;
+        margin: auto;
+        border: 10px ridge goldenrod;
+        background: darkred;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: baseline;
+    } #container {
+        width: 1024px;
+        max-width: 1024px;
+        height: 365px;
+        border: 10px ridge goldenrod;
+        background: darkred;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    } img {
+        width: 200px;
+        height: auto;
+        margin-top: 50px;
+        border: 10px ridge goldenrod;
+    } img:hover {
+        transform: scale(1.03);
+        transition: transform 0.5s;
+    } figure {
+        width: 200px;
+        height: 168px;
+    } figcaption {
+        font: 20pt 'Newsreader';
+        justify-content: center;
+        text-align: center;
+        color: gold;
+        text-shadow: 2px 3px 6px black;
+        margin-top: 10px;
+    }
+</style>
+</head>
+
+<body>
+    <div id="titlecard">
+        <h1>Curious, are we?</h1>
+        <p>Well, have a look around, then! Don't worry, the art won't bite!<br>Give 'em a click to see them better!</p>
+    </div>
+    <div id="container">
+        <figure>
+            <a href="checkmate.png">
+            <img src="checkmatethumb.jpg"/>
+            </a>
+            <figcaption>"Checkmate"</figcaption>
+        </figure>
+        <figure>
+            <a href="poster1.png">
+            <img src="poster1_thumb.jpg"/>
+            </a>
+            <figcaption>Visions Unveiled: Poster 1</figcaption>
+        </figure>
+        <figure>
+            <a href="poster2.png">
+            <img src="poster2_thumb.jpg"/>
+            </a>
+            <figcaption>Visions Unveiled: Poster 2</figcaption>
+        </figure>
+    </div>
+</body>
+</html>
